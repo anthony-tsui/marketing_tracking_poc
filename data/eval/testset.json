@@ -1,0 +1,146 @@
+{
+  "items": [
+    {
+      "id": "q1",
+      "question": "What is the main difference in scope between the User acquisition report and the Traffic acquisition report in Google Analytics?",
+      "expected_answer": "The User acquisition report is scoped to new users, while the Traffic acquisition report is scoped to new sessions. The User acquisition report focuses on understanding how new users find and land on your website or app, whereas the Traffic acquisition report focuses on understanding how you're able to re-engage users across sessions.",
+      "key_points": [
+        "User acquisition report is scoped to users",
+        "Traffic acquisition report is scoped to sessions",
+        "User acquisition focuses on new users",
+        "Traffic acquisition focuses on new sessions and re-engagement"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14731736?hl=en"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What dimensions are included in the User acquisition report versus the Traffic acquisition report?",
+      "expected_answer": "The User acquisition report includes user-scoped, cross-channel traffic source dimensions such as First user source, First user medium, and First user campaign. The Traffic acquisition report includes session-scoped, cross-channel traffic source dimensions such as Session source, Session medium, and Session campaign.",
+      "key_points": [
+        "User acquisition includes user-scoped dimensions with 'First user' prefix",
+        "Traffic acquisition includes session-scoped dimensions with 'Session' prefix",
+        "First user source, First user medium, First user campaign for User acquisition",
+        "Session source, Session medium, Session campaign for Traffic acquisition"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14731736?hl=en"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Why should you not compare metric values across the User acquisition and Traffic acquisition reports?",
+      "expected_answer": "You should not compare metric values across the reports because the dimensions in the leftmost column differ in scope, so you will see different values for the same metrics across reports. The User acquisition report dimensions are user-scoped while the Traffic acquisition report dimensions are session-scoped, leading to different values even for the same metric like Engagement rate.",
+      "key_points": [
+        "Dimensions differ in scope between the two reports",
+        "User acquisition dimensions are user-scoped",
+        "Traffic acquisition dimensions are session-scoped",
+        "Same metrics will show different values due to different scopes"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14731736?hl=en"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "If a user lands on a website for the first time from Google and later reopens the same website 10 more times directly by entering the site URL, how will the sessions be counted in the User acquisition and Traffic acquisition reports?",
+      "expected_answer": "In the User acquisition report, all 11 sessions will be counted in the 'Google' row. In the Traffic acquisition report, 1 session will be in the 'Google' row and the other 10 sessions will be in the '(direct)' row, if those sessions happened beyond the key event lookback window. If the other 10 sessions happened within the key event lookback window, the Traffic acquisition report will have 11 sessions in the 'Google' row.",
+      "key_points": [
+        "User acquisition report counts all 11 sessions in the 'Google' row",
+        "Traffic acquisition report counts 1 session in 'Google' and 10 in '(direct)' if beyond lookback window",
+        "If within key event lookback window, all 11 sessions appear in 'Google' row in Traffic acquisition",
+        "Key event lookback window is 90 days by default"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14731736?hl=en"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What are the steps to send a report by email in Google Analytics, and what permissions are required?",
+      "expected_answer": "To send a report by email: 1) In Google Analytics, select Reports on the left. 2) Open the report you want to send as an email. 3) On the top right of the report, click Share this report > Send Email. Only administrators can send reports by email. If you can't find Send Email in the menu, it means you don't have permission to schedule a report. You need to complete fields including Report name, Recipient list (up to 50 email addresses), Report format (PDF or CSV), and Language, then click Send.",
+      "key_points": [
+        "Navigate to Reports and open the desired report",
+        "Click Share this report > Send Email",
+        "Only administrators can send reports by email",
+        "Can select up to 50 email recipients",
+        "Report format options are PDF or CSV"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14723303?hl=en"
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Which reports cannot be sent by email in Google Analytics?",
+      "expected_answer": "You cannot send reports by email for the Realtime report or the Advertising reports.",
+      "key_points": [
+        "Realtime report cannot be emailed",
+        "Advertising reports cannot be emailed",
+        "Standard and custom reports can be emailed"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14723303?hl=en"
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "What permissions do administrators and editors have regarding report collections in Google Analytics 360?",
+      "expected_answer": "Administrators of a Google Analytics 360 property can assign users or groups to report collections, and view and manage the users or groups assigned to report collections. Editors can create report collections, which are assigned to all users by default, but they cannot change the assigned users or groups, cannot view the users or groups assigned to each collection, and cannot change the assignment of a collection that has been shared to a subset of users or groups by a property Admin.",
+      "key_points": [
+        "Administrators can assign users/groups to report collections",
+        "Administrators can view and manage assigned users/groups",
+        "Editors can create report collections but cannot manage assignments",
+        "Editors cannot view users/groups assigned to collections",
+        "Editors cannot change assignments made by Admins"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14640851?hl=en"
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "What is the limit on the number of published report collections that can be assigned to each Google Analytics user?",
+      "expected_answer": "You can assign up to 7 published report collections to each Google Analytics user.",
+      "key_points": [
+        "Maximum of 7 published report collections per user",
+        "Applies to Google Analytics 360 properties",
+        "Limit is on published report collections"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14640851?hl=en"
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "How do you access the Campaign Manager 360 report in Google Analytics, and what is required to see it?",
+      "expected_answer": "To access the Campaign Manager 360 report: 1) Sign in to Google Analytics. 2) In Reports, under the Life cycle collection, click Acquisition > Overview. 3) Click View Campaign Manager 360 campaigns. You must link your Campaign Manager 360 Floodlight configuration to your property to see the summary card in the Acquisition overview report. If you unlink your CM360 advertiser from your property, you can still access the report to view historical data about your campaigns.",
+      "key_points": [
+        "Navigate to Reports > Life cycle > Acquisition > Overview",
+        "Click 'View Campaign Manager 360 campaigns'",
+        "Must link Campaign Manager 360 Floodlight configuration to see the report",
+        "Historical data remains accessible even after unlinking",
+        "Report may need to be added if not in default reports"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14264974?hl=en"
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What attribution model does the Campaign Manager 360 report use, and can it be changed?",
+      "expected_answer": "The Campaign Manager 360 report includes only sessions attributed to CM360 using a non-direct cross-channel last click attribution model. All events and conversions that happen in a given session are attributed to the same source for that session, based on the attribution for the session_start event. The attribution model cannot be changed using the Attribution Settings. However, you can change the conversion window in Attribution Settings to change how far back in time an event is eligible for attribution credit. The report also excludes traffic when the Session CM360 advertiser ID is (not set) or an empty string.",
+      "key_points": [
+        "Uses non-direct cross-channel last click attribution model",
+        "All events in a session attributed to same source based on session_start event",
+        "Attribution model cannot be changed",
+        "Conversion window can be adjusted in Attribution Settings",
+        "Excludes traffic when Session CM360 advertiser ID is (not set) or empty"
+      ],
+      "gold_source_urls": [
+        "http://support.google.com/analytics/answer/14264974?hl=en"
+      ]
+    }
+  ]
+}
