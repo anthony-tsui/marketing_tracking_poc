@@ -66,7 +66,7 @@ Unused helpers `rewrite_query`, `expand_query`, and `rerank_chunks` remain in `r
 6. Test-set generation + judge + Eval tab
 7. Smoke e2e and later retrieval/prompt tuning
 
-Last crawl snapshot: ~3199 visited, ~3178 stored, 6 failed. Last eval (10 generated questions): accuracy 0.975, completeness 0.985, relevance 0.97.
+Last crawl snapshot: ~3199 visited, ~3178 stored, 6 failed. Initial evaluation (19 Aug 2026, 10 generated questions, GLM-as-judge): accuracy 0.945, completeness 0.885, relevance 1.000.
 
 ## Risks and mitigations
 
