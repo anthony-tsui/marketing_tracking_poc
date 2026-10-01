@@ -123,6 +123,6 @@ IDs are already defaulted in `config.py` (`NOTION_NOTES_DATABASE_ID`, `NOTION_NO
 - Extracts the main article body (strips nav/footer/chrome) before saving to Notion.
 - Chat is written for **marketers briefing a developer**, not as a raw docs dump. Vague questions get clarifying questions first.
 - Live retrieval does **not** call the unused LLM rewrite / expand / rerank helpers still in `retrieval.py`.
-- Initial evaluation (19 Aug 2026, 10 generated questions, GLM-as-judge): accuracy **0.945**, completeness **0.885**, relevance **1.000**. Treat as a smoke signal, not a gold benchmark.
+- Initial evaluation, a mid-August 2026 run (published 16 Aug) with 10 generated questions and GLM-as-judge: accuracy **0.945**, completeness **0.885**, relevance **1.000**. Treat as a smoke signal, not a gold benchmark.
 - Paths: crawl state `data/crawl_state.json`, Chroma `data/chroma/`, eval `data/eval/testset.json` and `data/eval/results.json`.
 - `reset_poc.py` keeps non–Web Clip notes (for example Business requirements).
